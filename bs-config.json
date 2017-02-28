@@ -1,0 +1,5 @@
+{
+  "port": 9090,
+  "files": ["./quicko-help-center/*.{html,htm,css,js}"],
+  "server": { "baseDir": "./quicko-help-center" }
+}

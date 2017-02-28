@@ -1,0 +1,25 @@
+{
+  "name": "phantomjs",
+  "version": "1.0.0",
+  "description": "This is a helper repository which is used as demonstration code for the **AngularJS and SEO** article found on yearofmoo.com",
+  "main": ".phantomjs-runner.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server -c bs-config.json",
+    "dev1": "lite-server -c bs-config.1.json"
+  },
+  "repository": {
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+  },
+  "homepage": "",
+  "devDependencies": {
+    "lite-server": "^2.2.2",
+    "phantomjs-prebuilt": "^2.1.14"
+  }
+}
