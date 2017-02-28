@@ -22,16 +22,10 @@ if(url.length > 0) {
           // if(body.getAttribute('data-status') == 'ready') {
           //   return document.getElementsByTagName('html')[0].outerHTML;
           // }
-          ///if (document.readyState == 'loaded') { //content.childElementCount > 0){
-          body.onLoadFinished = function() {
-            clearTimeout(delay);
-            console.log(document.getElementsByTagName('html')[0].outerHTML);
-            phantom.exit();
-
-          }            
-          // if ( document.readyState === "complete" ) {            
-          //   return document.getElementsByTagName('html')[0].outerHTML;
-          // }
+          ///if (document.readyState == 'loaded') { //content.childElementCount > 0){       
+          if ( document.readyState === "complete" ) {            
+            return document.getElementsByTagName('html')[0].outerHTML;
+          }
         });
         if(html) {
           clearTimeout(delay);
